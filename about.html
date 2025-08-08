@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ಓಪನ್ ಸೇತು - ನಮ್ಮ ಬಗ್ಗೆ</title>
+  <style>
+    :root {
+      --max-width: 1200px;
+      --gutter: 24px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      color: #1F2937;
+      background: #fff;
+    }
+    .about-wrapper {
+      background-color: #F7F9FB;
+      position: relative;
+      overflow: hidden;
+    }
+    .white-tilted-layer {
+      position: absolute; top: 60px;
+      width: 100%; height: 1300px;
+      background: white;
+      transform: skewY(-5deg);
+      z-index: 0;
+    }
+    .blue-shapes {
+      position: absolute; top: -45px; right: 0;
+      z-index: 1; transform: skewY(-5deg);
+    }
+    .blue1, .blue2 { position: absolute; transform: skewX(-30deg); }
+    .blue1 {
+      background-color: #80E9FF;
+      width: 35vw; max-width: 420px;
+      height: 25px; top: 50px; right: 10px;
+      z-index: 1;
+    }
+    .blue2 {
+      background-color: #185ADB;
+      width: 10vw; max-width: 120px;
+      height: 25px; top: 70px; right: 200px;
+      z-index: 2;
+    }
+    .section {
+      position: relative;
+      max-width: var(--max-width);
+      padding: 8rem var(--gutter) 4rem;
+      margin: 0 auto;
+      z-index: 2;
+    }
+    .about-heading {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #032E83;
+      margin: 0 0 1.5rem;
+      text-align: left;
+    }
+    .top-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      margin-bottom: 4rem;
+    }
+    .top-text {
+      flex: 1 1 320px;
+      max-width: 500px;
+      text-align: left;
+    }
+    .top-text .highlight {
+      color: #0A55A7;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .top-text h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 0.5rem 0 1.5rem;
+      color: #032E83;
+    }
+    .top-text p {
+      color: #425466;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .top-image {
+      flex: 0 1 320px;
+      max-width: 320px;
+    }
+    .top-image img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      background: #fff;
+      padding: 2rem;
+      box-shadow: 0 20px 90px rgba(0,0,0,0.12);
+      border-radius: 15px;
+      justify-items: center;
+    }
+    .grid-box {
+      background: #F5F7FA;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
+    }
+    .grid-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+    .grid-box h3 {
+      font-size: 1.2rem;
+      color: #032E83;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .grid-box p {
+      color: #425466;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+    @media (max-width: 768px) {
+      .section { padding: 6rem var(--gutter) 3rem; }
+      .about-heading {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .top-container { flex-direction: column; }
+      .top-text { text-align: center; }
+      .top-text h2 { font-size: 1.5rem; }
+    }
+    @media (max-width: 480px) {
+      .about-heading { font-size: 1.75rem; }
+      .top-text { font-size: 0.9rem; }
+      .top-text h2 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <section class="about-wrapper">
+    <div class="white-tilted-layer"></div>
+    <div class="blue-shapes">
+      <div class="blue1"></div>
+      <div class="blue2"></div>
+    </div>
+
+    <div class="section">
+      <div class="top-container">
+        <div class="top-text">
+          <h1 class="about-heading">ನಮ್ಮ ಬಗ್ಗೆ</h1>
+          <p class="highlight">ಒಂದೇ ಗುರುತು, ಒಂದೇ ಹೆಸರು</p>
+          <h2>ಓಪನ್ ಸೇತು ಭಾರತದ ಸ್ವಂತ ಇಂಟರ್ನೆಟ್‌ಗೆ ಸೇತುವೆಯಾಗಿದೆ.</h2>
+          <p>ನಾವು ಪ್ರತಿಯೊಬ್ಬ ಭಾರತೀಯರಿಗೂ ಅವರ ಮಾತೃಭಾಷೆಯಲ್ಲಿ ವೆಬ್ ಅನ್ನು ಪ್ರವೇಶಿಸಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತೇವೆ, ಇಂಗ್ಲಿಷ್ ಅಗತ್ಯವಿಲ್ಲ, ಯಾವುದೇ ಹೊಸ ಅಪ್ಲಿಕೇಶನ್‌ಗಳಿಲ್ಲ, ಯಾವುದೇ ಗೇಟ್‌ಕೀಪರ್‌ಗಳಿಲ್ಲ.</p>
+          <p>ಉಚಿತ, ವಿಕೇಂದ್ರೀಕೃತ ಮತ್ತು ಅಂತರ್ಗತ ಇಂಟರ್ನೆಟ್‌ನ ದೃಷ್ಟಿಕೋನದಿಂದ ಹುಟ್ಟಿದ ಓಪನ್‌ಸೇತು, ಹ್ಯಾಂಡ್‌ಶೇಕ್‌ನಿಂದ ನಡೆಸಲ್ಪಡುವ ಮತ್ತು ಭಾರತದಲ್ಲೇ ಬೇರೂರಿರುವ ಬಹುಭಾಷಾ ವೆಬ್ ಅನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಬಳಕೆದಾರರಿಗೆ ತಮ್ಮ DNS ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಸರಳವಾಗಿ ಬದಲಾಯಿಸಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ. ಇದು ನಿಮ್ಮ ನಿಯಮಗಳ ಮೇಲಿನ ಇಂಟರ್ನೆಟ್ ಆಗಿದೆ, ಅಲ್ಲಿ ಡೊಮೇನ್ ಹೆಸರುಗಳು ವಿದೇಶಿ ಲಿಪಿಗಳಲ್ಲಿ ಅಥವಾ ಕೇಂದ್ರೀಕೃತ ನಿಯಂತ್ರಣದಲ್ಲಿಲ್ಲ, ಆದರೆ ನಿಮ್ಮ ಸ್ವಂತ ಭಾಷೆಯಲ್ಲಿ, ನಿಮ್ಮ ಸ್ವಂತ ಭಾಷೆಯಲ್ಲಿರುತ್ತವೆ.</p>
+          <p>ನಾವು ಇಂಟರ್ನೆಟ್ ಅನ್ನು ಏಕಸ್ವಾಮ್ಯದಿಂದ ಮರಳಿ ಪಡೆದುಕೊಂಡು ಜನರಿಗೆ ಒಂದೇ ಹೆಸರು, ಒಂದೇ ಭಾಷೆ, ಒಂದೇ ಗುರುತನ್ನು ಮರಳಿ ನೀಡುತ್ತಿದ್ದೇವೆ.</p>
+        </div>
+        <div class="top-image">
+          <img src="img5.png" alt="About Image">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid-box">
+          <h3>ಬಿಲ್ಡರ್‌ಗಳಿಗೆ</h3>
+          <p>ಓಪನ್‌ಸೇತು ನಾವೀನ್ಯತೆಗೆ ಒಂದು ಆಟದ ಮೈದಾನ. ಸ್ಥಳೀಯ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ನಿರ್ಮಿಸುವ ಡೆವಲಪರ್‌ಗಳಿಂದ ಹಿಡಿದು ಡಿಜಿಟಲ್ ಗುರುತನ್ನು ಮರುಕಲ್ಪಿಸುವ ಸ್ಟಾರ್ಟ್‌ಅಪ್‌ಗಳವರೆಗೆ, ಭಾರತವು ಈಗ ವಿಕೇಂದ್ರೀಕೃತ ಅಡಿಪಾಯವನ್ನು ಹೊಂದಿದ್ದು, ಅದನ್ನು ರೂಪಿಸಲು ಸಿದ್ಧವಾಗಿದೆ. ಸ್ಥಳೀಯ ಡೊಮೇನ್ ಹೆಸರುಗಳು, ಬಹುಭಾಷಾ ಲಾಗಿನ್ ಮತ್ತು ಮುಕ್ತ DNS ನೊಂದಿಗೆ, ನೀವು 1.4 ಬಿಲಿಯನ್ ಧ್ವನಿಗಳಿಗೆ ನೇರವಾಗಿ ಅವರದೇ ಭಾಷೆಯಲ್ಲಿ ಮಾತನಾಡುವ ಸೇವೆಗಳನ್ನು ನಿರ್ಮಿಸಬಹುದು.</p>
+        </div>
+        <div class="grid-box">
+          <h3>ಹೂಡಿಕೆದಾರರಿಗೆ</h3>
+          <p>ಮುಕ್ತ ಅಂತರ್ಜಾಲದಲ್ಲಿ ಭಾರತವು ಮಾನವೀಯತೆಯ ಅತಿದೊಡ್ಡ ಭಾಗವಾಗಿದೆ. ಓಪನ್‌ಸೇತು ಕೇವಲ ಮೂಲಸೌಕರ್ಯವಲ್ಲ, ಅದು ಮೂಲಸೌಕರ್ಯ-ಶಕ್ತಿಯಾಗಿದೆ. ಭಾಷಾ ತಡೆಗೋಡೆಯನ್ನು ತೆಗೆದುಹಾಕಿ ಮತ್ತು ವ್ಯಕ್ತಿಗಳಿಗೆ ಡಿಜಿಟಲ್ ಮಾಲೀಕತ್ವವನ್ನು ಹಿಂದಿರುಗಿಸುವ ಮೂಲಕ ನಾವು ಮುಂದಿನ ಶತಕೋಟಿ ಬಳಕೆದಾರರನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡುತ್ತಿದ್ದೇವೆ. ಪರಿಸರ ವ್ಯವಸ್ಥೆಯು ಓಎಸ್ ಮತ್ತು ಬ್ರೌಸರ್‌ಗಳಂತಹ ಮೂಲಸೌಕರ್ಯ ತಂತ್ರಜ್ಞಾನದಿಂದ ಡಿಜಿಟಲ್ ಗುರುತು, ಪಾವತಿಗಳು, ವಾಣಿಜ್ಯ ಮತ್ತು ಸಂವಹನದಂತಹ ಸೇವೆಗಳವರೆಗೆ ಎಲ್ಲವನ್ನೂ ಮರುರೂಪಿಸುತ್ತದೆ, ಎಲ್ಲವೂ ಭಾರತದ ಅತ್ಯಂತ ಅಡಿಪಾಯದ ಪದರವಾದ ತನ್ನದೇ ಆದ ಇಂಟರ್ನೆಟ್ ಅನ್ನು ಆಧರಿಸಿದೆ. ಅದರ ಮೇಲೆ ನಿರ್ಮಿಸಲಾದ ಹಳಿಗಳು ಮತ್ತು ಸಂಸ್ಥಾಪಕರಲ್ಲಿ ಹೂಡಿಕೆ ಮಾಡಿ ಮತ್ತು ನೀವು ಡಿಜಿಟಲ್ ಭಾರತದ ಭವಿಷ್ಯದಲ್ಲಿ ಹೂಡಿಕೆ ಮಾಡಿ.</p>
+        </div>
+        <div class="grid-box">
+          <h3>ಸರ್ಕಾರಗಳಿಗೆ</h3>
+          <p>ಡಿಜಿಟಲ್ ಸಾರ್ವಜನಿಕ ಸರಕುಗಳು ಡಿಜಿಟಲ್ ಸಾರ್ವಜನಿಕ ಮೂಲಸೌಕರ್ಯಕ್ಕೆ ಅರ್ಹವಾಗಿವೆ. ಓಪನ್‌ಸೇತುವನ್ನು ಅದರ ಮೂಲದಲ್ಲಿ ಪಾರದರ್ಶಕತೆ, ಒಳಗೊಳ್ಳುವಿಕೆ ಮತ್ತು ಸಾರ್ವಭೌಮತ್ವದೊಂದಿಗೆ ನಿರ್ಮಿಸಲಾಗಿದೆ. ನಾವು ಇಂಡಿಯಾ ಸ್ಟ್ಯಾಕ್‌ನ ದೃಷ್ಟಿಕೋನಕ್ಕೆ ಅನುಗುಣವಾಗಿರುತ್ತೇವೆ ಮತ್ತು ಪ್ರತಿಯೊಬ್ಬ ನಾಗರಿಕನು ತಮ್ಮ ಮಾತೃಭಾಷೆಯಲ್ಲಿ ಡಿಜಿಟಲ್ ಸೇವೆಗಳನ್ನು ಪ್ರವೇಶಿಸಲು ಅಧಿಕಾರ ನೀಡುತ್ತೇವೆ. ಗ್ರಾಮೀಣ ಪ್ರವೇಶದಿಂದ ರಾಷ್ಟ್ರೀಯ ಮಟ್ಟದವರೆಗೆ, ಓಪನ್‌ಸೇತು ಸರ್ಕಾರಗಳಿಗೆ ಪೂರ್ಣ ಪ್ರಮಾಣದ ಡಿಜಿಟಲ್ ಸೇರ್ಪಡೆಗೆ ಸುರಕ್ಷಿತ, ಸಾರ್ವಭೌಮ ಮಾರ್ಗವನ್ನು ನೀಡುತ್ತದೆ. ಭಾರತವು ಜಾಗತಿಕ ಇಂಟರ್ನೆಟ್ ಅನ್ನು ತಲುಪುವ ಅಗತ್ಯವಿಲ್ಲ. ಓಪನ್ ಸೇತುವಿನೊಂದಿಗೆ, ನಾವು ನಮ್ಮದೇ ಆದ ಭಾಷೆಯಲ್ಲಿ, ನಮ್ಮದೇ ಆದ ನಿಯಮಗಳಲ್ಲಿ ಮುಂದುವರಿಯುತ್ತೇವೆ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
